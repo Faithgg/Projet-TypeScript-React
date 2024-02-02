@@ -8,3 +8,21 @@ Un examen peut comporter plusieurs questions et donc l'objectif serait de repond
 Une partie sera mise sur l'interface pour afficher l'historique des rendus...
 
 On devra donc pouvoir exercer sur chaque examen soumis le CRUD i.e le modifier, le supprimer ou afficher ses résultats.
+
+
+Packages necessaires :
+- typescrypt
+- react-error-overlay
+- tailwindCSS
+- 
+
+
+Deux fichiers JSON pour gérer les données (Pour éviter de recoder un backend)
+
+
+Les différrents routes : 
+- `/` : **Le Home**, qui affiche d'un coté un bouton pour démarer un examen et de l'autre coté les dix derniers examens soumis
+- `/exams` : qui affiche tous les examens soumis
+-`/exam/:id` : qui affiche les infos sur un examen
+- `/exam/:id/delete` : Qui permet de supprimer un examen
+- `/exam/:id/update` : Qui permet de modifier un examen
