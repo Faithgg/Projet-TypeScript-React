@@ -3,34 +3,15 @@ import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import { addExam } from '../../Store/Features/examsSlice'
 import { addQuiz } from '../../Store/Features/quizsSlice'
-// import { Disclosure, Menu, Transition } from '@headlessui/react'
-// import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import InfosForm from '../../Components/DashboardComponents/Form'
-// const user = {
-//   name: 'Tom Cook',
-//   email: 'tom@example.com',
-//   imageUrl:
-//     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-// }
-// const navigation = [
-//   { name: 'Dashboard', href: '#', current: true },
-//   { name: 'Team', href: '#', current: false },
-//   { name: 'Projects', href: '#', current: false },
-//   { name: 'Calendar', href: '#', current: false },
-//   { name: 'Reports', href: '#', current: false },
-// ]
-// const userNavigation = [
-//   { name: 'Your Profile', href: '#' },
-//   { name: 'Settings', href: '#' },
-//   { name: 'Sign out', href: '#' },
-// ]
 
-// function classNames(...classes : any) {
-//   return classes.filter(Boolean).join(' ')
-// }
+
+import InfosForm from '../../Components/DashboardComponents/Form'
+
 import { useDispatch,useSelector } from 'react-redux';
 import { Exam } from '../../Classes/Exam';
 import { User } from '../../Classes/User';
+
+import logo from './logo-cerveau.png'
 
 const avatarUrls = ["https://cdn.pixabay.com/photo/2016/09/12/09/51/abc-1663383_1280.png","https://cdn.pixabay.com/photo/2016/09/12/09/51/abc-1663385_1280.png","https://cdn.pixabay.com/photo/2016/09/12/09/52/abc-1663386_1280.png","https://cdn.pixabay.com/photo/2016/09/12/09/52/abc-1663387_1280.png"];
 
@@ -188,7 +169,7 @@ export default function Dashboard() {
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               className="mx-auto h-10 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src={"https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"}
               alt="Your Company"
             />
           </div>
